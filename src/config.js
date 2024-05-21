@@ -9,7 +9,7 @@ class Config {
       ec2ImageId: core.getInput('ec2-image-id'),
       ec2InstanceType: core.getInput('ec2-instance-type'),
       subnetId: core.getInput('subnet-id'),
-      securityGroupId: core.getInput('security-group-id'),
+      securityGroupIds: core.getInput('security-group-ids'),
       label: core.getInput('label'),
       ec2InstanceIds: core.getInput('ec2-instance-ids'),
       iamRoleName: core.getInput('iam-role-name'),
