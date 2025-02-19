@@ -38,8 +38,17 @@ async function startEc2Instance(label, githubRegistrationToken) {
   const userData = buildUserDataScript(githubRegistrationToken, label);
 
   const params = {
+    BlockDeviceMappings: [
+      {
+     DeviceName: config.input.deviceName, 
+     Ebs: {
+      VolumeSize: config.input.volumeSize
+     }
+    }
+   ], 
     ImageId: config.input.ec2ImageId,
     InstanceType: config.input.ec2InstanceType,
+    KeyName: config.input.keyName, 
     MinCount: 1,
     MaxCount: 1,
     UserData: Buffer.from(userData.join('\n')).toString('base64'),

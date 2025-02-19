@@ -15,7 +15,7 @@ Run the job on it.
 Finally, stop it when you finish.
 And all this automatically as a part of your GitHub Actions workflow.
 
-![GitHub Actions self-hosted EC2 runner](docs/images/github-actions-summary.png)
+![GitHub Actions self-hosted EC2 runner](docs/images/github-actions-summary.png)  
 
 See [below](#example) the YAML code of the depicted workflow. <br><br>
 
